@@ -1,4 +1,4 @@
-:root {
+* {
     --primary-color: #72b6ee;
     --secondary-color: #f4f8fb;
     --text-color: #060606;
@@ -17,12 +17,7 @@ body {
     font-weight: 300;
     color: #333;
 }
-.hero-text h2{
-    font-size: 2.5em;
-    margin: 10px 0;
-    display: flex;
-    color-scheme: ;
-}
+
 header {
     background-color: var(--primary-color);
     color: white;
@@ -119,7 +114,7 @@ th {
     background-color: var(--primary-color);
     color: white;
 }
-/
+
 form {
     display: flex;
     flex-direction: column;
@@ -169,4 +164,37 @@ footer {
     table {
         width: 90%;
     }
+}
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.hero-left h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    color: #222;
+}
+
+.hero-right .illustration {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+}
+.color-changing-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #ff3b3b; }
+    25% { color: #4CAF50; }
+    50% { color: #2982c2; }
+    75% { color: #9b27b0; }
+    100% { color: #ff9800; }
 }
